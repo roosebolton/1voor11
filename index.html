@@ -21,6 +21,29 @@
             Footer
         </footer>
     </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCt6rAjgj0exnValds91b42uxGee-vgIeE",
+          authDomain: "voor11-bf72e.firebaseapp.com",
+          projectId: "voor11-bf72e",
+          storageBucket: "voor11-bf72e.appspot.com",
+          messagingSenderId: "1032336725725",
+          appId: "1:1032336725725:web:00f3632b3b63386572ad34",
+          measurementId: "G-FDMF044HYF"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>
