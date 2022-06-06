@@ -1,3 +1,57 @@
+//nunito font weight 600
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+//nunito font weigth 800
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800&family=Roboto+Flex:opsz@8..144&display=swap');
+//roboto flex font weight 400 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Roboto+Flex:opsz@8..144&display=swap');
+
+//font variables
+$title-font: 'Nunito Sans', sans-serif;
+$subtitle-font: $title-font;
+$paragraph-font: 'Roboto Flex', sans-serif;
+
+//color variables
+$text-black: rgb(20,20,20);
+
+body{
+  color: $text-black;
+  h1{
+    font-weight: 800;
+    font-family: $title-font;
+    font-size: 8vw;
+  }
+  h4{
+    font-weight: 600;
+    font-family: $title-font;
+    font-size: 3.5vw;
+  }
+  p{
+    font-family: $paragraph-font;
+    font-size: 2vw;
+  }
+}
 .testTitle{
     color: aqua;
+}
+
+.header { grid-area: header; 
+line-height: 0.1%;}
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+header, main, footer{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
 }
